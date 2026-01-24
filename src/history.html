@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anurag R Simha | History</title>
+    <link rel="stylesheet" href="style-history.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script>
+        if (localStorage.getItem('theme') === 'dark') {
+            document.documentElement.classList.add('dark-mode');
+        }
+    </script>
+</head>
+
+<body>
+
+    <button class="menu-toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </button>
+
+    <nav class="side-nav" id="side-nav">
+        <ul class="nav-links">
+            <li><a href="#historyasmyhobby">History as My Hobby</a></li>
+            <li><a href="#myfavoritehistoricalfigures">My Favorite Historical Figures</a></li>
+            <li><a href="#peopleiadmire">Historical Figures I Deeply Admire</a></li>
+            <li><a href="#historychannels">YouTube Channel Recommendations</a></li>
+            <li><hr class="nav-divider"></li>
+            <li><button id="theme-toggle" class="nav-theme-btn">Switch to Dark</button></li>
+            <li><hr class="nav-divider"></li>
+        </ul>
+    </nav>
+
+    <div class="content-overlay">
+        <div class="profile-container">
+            <img src="../images/me_history.jpg" alt="Anurag R Simha" class="main-profile-pic">
+        </div>
+
+        <h1 class="name-font">History: Tales Where Legends are Spoken</h1>
+        <hr class="divider">
+
+        <section id="historyasmyhobby" class="reveal">
+            <h2 class="sub-header">History as My Hobby</h2>
+            <p class="bio">
+                I am huge fan of history! Particularly, the history of the western hemisphere. 
+                Whenever I find time, I allow myself to delve into learning about various events from the past 
+                and analyze the dynamics then versus now. While many people might find history as a boring topic, in truth, 
+                it's an extremely exciting subject of study. From the time of the Egyptian Civilization, to the Roman Empire, 
+                and the Second World War, everything I have learned about has profoundly fascinated me. History is where 
+                you get to learn how the modern world has been shaped today. The more I dived deep into studying history, 
+                the more it has sparked the curious side of me. I love visiting 
+                historical sites, learning about them, and connecting them to what I have previously learned. 
+                Overall, learning history is always fun, and it helps you understand the world better.
+            </p>
+        </section>
+
+        <hr class="divider-sub">
+
+        <section id="myfavoritehistoricalfigures" class="reveal">
+            <h2 class="sub-header">My Favorite Historical Figures</h2>
+            <div class="picture-grid contact-expint-images">
+                <div class="elevate-item">
+                    <img src="../images/georgewashington.png" alt="President George Washington">
+                    <span>President George Washington</span>
+                    <span>(My icon)</span>
+                </div>
+                <div class="elevate-item">
+                    <img src="../images/franklindroosevelt.png" alt="President Franklin D Roosevelt">
+                    <span>President Franklin D Roosevelt</span>
+                </div>
+                <div class="elevate-item">
+                    <img src="../images/napoleonbonaparte.png" alt="L'empereur Napoleon Bonaparte">
+                    <span>L'empereur Napoleon Bonaparte</span>
+                </div>
+            </div>
+        </section>
+
+        <hr class="divider-sub">
+
+        <section id="peopleiadmire" class="reveal">
+            <h2 class="sub-header">Historical Figures I Deeply Admire</h2>
+            
+            <div class="carousel-container">
+                <div class="carousel-slide">
+                    <div class="hisfig-item">
+                        <a href="https://en.wikipedia.org/wiki/Benjamin_Franklin" target="_blank">
+                            <img src="../images/ben-franklin.jpg" alt="Benjamin Franklin">
+                        </a>
+                    </div>
+                    <div class="hisfig-item">
+                        <a href="https://en.wikipedia.org/wiki/John_Adams" target="_blank">
+                            <img src="../images/johnadams.webp" alt="President John Adams">
+                        </a>
+                    </div>
+                    <div class="hisfig-item">
+                        <a href="https://en.wikipedia.org/wiki/Abraham_Lincoln" target="_blank">
+                            <img src="../images/abrahamlincoln.jpg" alt="President Abraham Lincoln">
+                        </a>
+                    </div>
+                    <div class="hisfig-item">
+                        <a href="https://en.wikipedia.org/wiki/Arthur_Wellesley,_1st_Duke_of_Wellington" target="_blank">
+                            <img src="../images/sirarthurwellesley.jpg" alt="Sir Arthur Wellesley">
+                        </a>
+                    </div>
+                    <div class="hisfig-item">
+                        <a href="https://en.wikipedia.org/wiki/Wolfgang_Amadeus_Mozart" target="_blank">
+                            <img src="../images/mozart.jpg" alt="Wolfgang Amadeus Mozart">
+                        </a>
+                    </div>
+                    <div class="hisfig-item">
+                        <a href="https://en.wikipedia.org/wiki/Ludwig_van_Beethoven" target="_blank">
+                            <img src="../images/beethoven.jpg" alt="Ludwig Van Beethoven">
+                        </a>
+                    </div>
+                    <div class="hisfig-item">
+                        <a href="https://en.wikipedia.org/wiki/Augustus" target="_blank">
+                            <img src="../images/augustuscaesar.webp" alt="Gaius Julius Caesar Octavianus">
+                        </a>
+                    </div>
+                </div>
+                
+                <button class="carousel-prev" id="prevBtn">P</button>
+                <button class="carousel-next" id="nextBtn">N</button>
+            </div>
+            <div id="caption-text" class="carousel-caption">
+                Benjamin Franklin (Reason: Compassionate and Wise)
+            </div>
+        </section>
+
+        <hr class="divider-sub">
+
+        <section id="historychannels" class="reveal">
+            <h2 class="sub-header">Recommended YouTube Channels to Learn History</h2>
+            <div class="picture-grid contact-expint-images">
+                <a href="https://www.youtube.com/@EpichistoryTv" target="_blank" class="elevate-item">
+                    <img src="../images/epichistorytv.jpg" alt="Epic History">
+                    <span>Epic History (My favorite)</span>
+                </a>
+                <a href="https://www.youtube.com/@TheArmchairHistorian" target="_blank" class="elevate-item">
+                    <img src="../images/armchairhistorian.jpg" alt="The Armchair Historian">
+                    <span>The Armchair Historian</span>
+                </a>
+                <a href="https://www.youtube.com/@HistorybyMae" target="_blank" class="elevate-item">
+                    <img src="../images/historybymae.jpg" alt="History by Mae">
+                    <span>History By Mae</span>
+                </a>
+                <a href="https://www.youtube.com/@cinematicbattles559" target="_blank" class="elevate-item">
+                    <img src="../images/livehistory.jpg" alt="Historical Total War Battles">
+                    <span>Historical Total War Battles</span>
+                </a>
+            </div>
+        </section>
+
+        <div><p></p><br><p></p></div>
+
+        <button id="backToTop" title="Go to top">
+            <img src="../images/backtotop-history.png" alt="backtotop">
+        </button>
+
+        <button id="homeButton" title="home">
+            <img src="../images/home-history.png" alt="home-button">
+        </button>
+
+    </div>
+    <script src="functionality-history.js"></script>
+</body>
+</html>

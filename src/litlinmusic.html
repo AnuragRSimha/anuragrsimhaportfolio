@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anurag R Simha | Literature, Linguistics, and Music</title>
+    <link rel="stylesheet" href="style-litlinmusic.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script>
+        if (localStorage.getItem('theme') === 'dark') {
+            document.documentElement.classList.add('dark-mode');
+        }
+    </script>
+</head>
+
+<body>
+
+    <button class="menu-toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </button>
+
+    <nav class="side-nav" id="side-nav">
+        <ul class="nav-links">
+            <li><a href="#myinterestinlitlinmusic">My Interest in Literature, Linguistics, and Music</a></li>
+            <li><a href="#thelanguagesispeak">The Languages I Speak</a></li>
+            <li><a href="#favoldlanguages">My Favorite Old Languages</a></li>
+            <li><a href="#myliteraryworks">My Literary Works</a></li>
+            <li><a href="#favoriteclassicalcomposers">My Favorite Classical Composers</a></li>
+            <li><a href="#youtubechannels">Recommended Musical YouTube Channels</a></li>
+            <li><hr class="nav-divider"></li>
+            <li><button id="theme-toggle" class="nav-theme-btn">Switch to Dark</button></li>
+            <li><hr class="nav-divider"></li>
+        </ul>
+    </nav>
+
+    <div class="content-overlay">
+        <div class="profile-container">
+            <img src="../images/me_lin_lit.png" alt="Anurag R Simha" class="main-profile-pic">
+        </div>
+
+        <h1 class="name-font">Literature, Linguistics, and Music</h1>
+        <h1 class="name-subtitle-font">Where the Soul Connects to the Divine</h1>
+        <hr class="divider">
+
+        <section id="myinterestinlitlinmusic" class="reveal">
+            <h2 class="sub-header">My Interest in Literature, Linguistics, and Music</h2>
+            <p class="bio">
+                Story and creative writing have always been an integral part of me since I was a kid. To while my time,
+                I have always engaged in writing short stories, novels, and as a kid, poems. 
+                My deep-rooted interest in literature sailed me on the boat to the world of linguistics, 
+                where my interest in learning languages and exploring the world began. I love analyzing the origins of languages, 
+                particularly the languages of the European family. The Germanic and Romance language families are my favorite! 
+                Language is something that helps build personality, and music is something that helps shape it
+                better. Whenever there is absolute silence, listening to music brings me great satisfaction. I simply
+                enjoy listening to classical music by celebrated artists like Mozart, Beethoven, Sabastian Bach, etc. 
+                Old Hollywood classics and noir jazz are my top favorite generes of music besides classical music. 
+                These three divine forms of art have always been important to me.
+            </p>
+        </section>
+
+        <hr class="divider-sub">
+
+        <section id="thelanguagesispeak" class="reveal">
+            <h2 class="sub-header">The Languages I Speak</h2>
+            <div class="picture-grid contact-expint-images">
+                <a href="https://en.wikipedia.org/wiki/American_English" target="_blank" class="elevate-item">
+                    <img src="../images/english.png" alt="American English" 
+                    title = "Yes! I speak American English and it's the language of this website.">
+                    <span>English (C1)</span>
+                </a>
+                <a href="https://en.wikipedia.org/wiki/Kannada" target="_blank" class="elevate-item">
+                    <img src="../images/canarese.png" alt="Canarese/Kannaḍa" 
+                    title = "Haudu! Nānu kannaḍa bhāṣeyannū mātanāḍuttēne.">
+                    <span>Canarese (B2-C1)</span>
+                    <span>Kannaḍa</span>
+                </a>
+                <a href="https://en.wikipedia.org/wiki/French_language" target="_blank" class="elevate-item">
+                    <img src="../images/french.png" alt="French/Français" title = "Oui! Je parle un peu de français parisien.">
+                    <span>French (A1-A2)</span>
+                    <span>Français</span>
+                </a>
+                <a href="https://en.wikipedia.org/wiki/Spanish_language" target="_blank" class="elevate-item">
+                    <img src="../images/spanish.png" alt="Spanish/Español" title = "Si! Yo hablo un poco de español.">
+                    <span>Spanish (A1)</span>
+                    <span>Español</span>
+                </a>
+            </div>
+        </section>
+
+        <hr class="divider-sub">
+
+        <section id="favoldlanguages" class="reveal">
+            <h2 class="sub-header">My Favorite Old Languages</h2>
+            <p class="bio">(That I look forward to learning in the future)</p> 
+            <p class="bio">Please click on each image to listen to an audio clip in the respective language.</p>
+            <div class="picture-grid contact-expint-images">
+                <a href="https://youtu.be/B0XSX_WfzPA?list=RDB0XSX_WfzPA" target="_blank" class="elevate-item audio-trigger" 
+                data-audio="../media/oldnorse.mp3" 
+                data-thumb="../images/oldnorsesong.avif"
+                data-title="My Mother Told Me in Old Norse">
+                    <img src="../images/oldnorse.jpg" alt="Old Norse" title="Click to listen to a song in Old Norse">
+                    <span>Old Norse</span>
+                    <span>Dǫnsk Tunga</span>
+                </a>
+                <a href="https://youtu.be/oMt5fav85WY" target="_blank" class="elevate-item audio-trigger" 
+                data-audio="../media/latinsound.mp3" 
+                data-thumb="../images/latinsound.avif"
+                data-title="The Sound of Latin (Lingua Latinum)">
+                    <img src="../images/latin.jpg" alt="Latin" title="Click to listen to what Latin sounds like">
+                    <span>Classical Latin</span>
+                    <span>Lingua Latinum</span>
+                </a>
+                <a href="https://youtu.be/FvjR5aBQXKI?list=RDFvjR5aBQXKI" target="_blank" class="elevate-item audio-trigger" 
+                data-audio="../media/oldenglish.mp3" 
+                data-thumb="../images/oldenglishsong.avif" 
+                data-title="Herr Mannelig in Old English">
+                    <img src="../images/oldenglish.webp" alt="Old English" title="Click to listen to a song in Old English">
+                    <span>Old English</span>
+                    <span>Ænglisc</span>
+                </a>
+            </div>
+        </section>
+
+        <div id="audio-playbar" class="playbar-container">
+            <a id="playbar-link" href="#" target="_blank">
+                <img id="playbar-thumb" src="" alt="Thumbnail" class="playbar-img" title="Watch on YouTube">
+            </a>
+            
+            <div class="playbar-controls">
+                <span id="playbar-label">Language</span>
+            </div>
+
+            <button id="playbar-toggle"><i class="fas fa-play"></i></button>
+            
+            <audio id="global-audio-player"></audio>
+        </div>
+
+        <hr class="divider-sub">
+
+        <section id="myliteraryworks" class="reveal">
+            <h2 class="sub-header">My Literary Works</h2>
+            <p class="bio">
+                I have written a variety of stories based on different genres, but published my most favorite one on Amazon. It's the one below!
+            </p>
+            <div class="picture-grid contact-expint-images">
+                <a href="https://www.amazon.com/Christmas-Night-at-Lexington
+                /dp/B0DRTN515D/ref=sr_1_1?
+                crid=1TIC359C58YWT&dib=eyJ2IjoiMSJ9.hEcKTOrmS7lPWrAwEmzpS6uyduvmlFKIhuiPTtNvtuJuM2f-
+                T1JZHNl1vF0jQIRZtwg6ritDJrq0TcNppw-vpQ.ZBKW6EqAHoE-JsaIv5IIIRwHDIsZR1arNxwHo1KfqBE&di
+                b_tag=se&keywords=the+christmas+night+at+lexington&qid=1769271122&sprefix=%2Caps%2C182&sr=8-1" 
+                target="_blank" class="elevate-item">
+                    <img src="../images/story1.png" alt="The Christmas Night at Lexington">
+                    <span>The Christmas Night at Lexington</span>
+                </a>
+            </div>
+            <p></p>
+            <p class="bio">Below is another story that I am working on currently.</p>
+            <div class="picture-grid contact-expint-images">
+                <div class="elevate-item">
+                    <img src="../images/story2.png" alt="The Christmas Night at Lexington">
+                    <span>The Spy in American Skin</span>
+                </div>
+            </div>
+        </section>
+
+        <hr class="divider-sub">
+
+        <section id="favoriteclassicalcomposers" class="reveal">
+            <h2 class="sub-header">My Favorite Classical Composers</h2>
+            <div class="picture-grid contact-expint-images">
+                <a href="https://youtu.be/Rb0UmrCXxVA?list=RDRb0UmrCXxVA" 
+                target="_blank" class="elevate-item">
+                    <img src="../images/mozart.jpg" alt="Wolfgang Amadeus Mozart">
+                    <span>Wolfgang Amadeus Mozart</span>
+                </a>
+                <a href="https://youtu.be/W-fFHeTX70Q?list=RDW-fFHeTX70Q" 
+                target="_blank" class="elevate-item">
+                    <img src="../images/beethoven.jpg" alt="Ludwig Van Beethoven">
+                    <span>Ludwig Van Beethoven</span>
+                </a>
+                <a href="https://youtu.be/7_WWz2DSnT8?list=RD7_WWz2DSnT8" 
+                target="_blank" class="elevate-item">
+                    <img src="../images/tschaikowski.webp" alt="Pyotr Ilyich Tchaikovsky">
+                    <span>Pyotr Ilyich Tchaikovsky</span>
+                </a>
+                <a href="https://youtu.be/JA4Yj5C0Uxw?list=RDJA4Yj5C0Uxw" 
+                target="_blank" class="elevate-item">
+                    <img src="../images/chopin.JPG" alt="Frédéric François Chopin">
+                    <span>Frédéric François Chopin</span>
+                </a>
+            </div>
+        </section>
+
+        <hr class="divider-sub">
+
+        <section id="youtubechannels" class="reveal">
+            <h2 class="sub-header">Recommended Musical YouTube Channels</h2>
+            <div class="picture-grid contact-expint-images">
+                <a href="https://www.youtube.com/@HALIDONMUSIC" target="_blank" class="elevate-item">
+                    <img src="../images/halidonmusic.jpg" alt="Halidon Music">
+                    <span>Halidon Music for Classical</span>
+                </a>
+                <a href="https://www.youtube.com/@thisisJazzCo" target="_blank" class="elevate-item">
+                    <img src="../images/jazzandco.jpg" alt="Jazz and Co.">
+                    <span>Jazz and Co. for Jazz Music</span>
+                </a>
+                <a href="https://www.youtube.com/@NemosDreamscapes" target="_blank" class="elevate-item">
+                    <img src="../images/nemosdreamscapes.jpg" alt="Pyotr Ilyich Tchaikovsky">
+                    <span>Nemo's Dreamscapes</span>
+                    <span>for Vintage Music</span>
+                </a>
+            </div>
+        </section>
+
+        <div><p></p><br><p></p></div>
+
+        <button id="backToTop" title="Go to top">
+            <img src="../images/backtotop-history.png" alt="backtotop">
+        </button>
+
+        <button id="homeButton" title="home">
+            <img src="../images/home-history.png" alt="home-button">
+        </button>
+
+    </div>
+    <script src="functionality-litlinmusic.js"></script>
+</body>
+</html>

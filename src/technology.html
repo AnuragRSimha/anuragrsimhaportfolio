@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anurag R Simha | Technology</title>
+    <link rel="stylesheet" href="style-technology.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script>
+        if (localStorage.getItem('theme') === 'dark') {
+            document.documentElement.classList.add('dark-mode');
+        }
+    </script>
+</head>
+
+<body>
+
+    <button class="menu-toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </button>
+
+    <nav class="side-nav" id="side-nav">
+        <ul class="nav-links">
+            <li><a href="#aboutme">My technical Background</a></li>
+            <li><a href="#mycertifications">My Certifications</a></li>
+            <li><a href="#myawards">My Awards</a></li>
+            <li><a href="#favoriteos">My Favorite Operating Systems</a></li>
+            <li><hr class="nav-divider"></li>
+            <li><button id="theme-toggle" class="nav-theme-btn">Switch to Dark</button></li>
+            <li><hr class="nav-divider"></li>
+        </ul>
+    </nav>
+
+    <div class="content-overlay">
+        <div class="profile-container">
+            <img src="../images/me_home.jpg" alt="Anurag R Simha" class="main-profile-pic">
+        </div>
+
+        <h1 class="name-font">Technology: The Heartbeat of the Modern World</h1>
+        <hr class="divider">
+
+        <section id="aboutme" class="reveal">
+            <h2 class="sub-header">A Peek Into My Technical Background</h2>
+            <p class="bio">I specialize in developing code using Python and Java. I love developing mobile and web applications!
+                It's so much fun to do! I have experience developing applications using Flutter where I have incorporated 
+                RESTful interactions with Flask. I bear expertise in cybersecurity and have extensively worked on 
+                it in AT&T where I contributed to more than 60% reduction in vulnerabilities. 
+                Additionally, I have had hands-on exposure to Agentic AI and have developed chatbots in the past
+                that went live on Microsoft Teams helping 2000+ vendors. 
+                It was a very interesting activity to do! Besides these, I love studying about 
+                computer networks and cloud computing. 
+            </p>
+        </section>
+
+        <hr class="divider-sub">
+
+        <section id="mycertifications" class="reveal">
+            <h2 class="sub-header">My Certifications</h2>
+            <p class="bio"><p class = "bio">I have certified myself in Microsoft Azure Fundamentals, AZ-900, and have obtained udemy certifications in 
+                <i>Learn Ethical Hacking from scratch</i> and 
+                <i>Digital Forensics for Pentesters.</i>
+            </p>
+            
+            <div class="carousel-container">
+                <div class="carousel-slide">
+                    <div class="cert-item"><a href="https://learn.microsoft.com/en-us/users/simhaanurag-7878/credentials/372bde5a5d31b" target="_blank"><img src="../images/az900.png" alt="AZ-900 Certificate"></a></div>
+                    <div class="cert-item"><a href="https://udemy-certificate.s3.amazonaws.com/image/UC-92a73964-c1a5-4aa5-825b-5796f44b08cc.jpg?v=1598716862000" target="_blank"><img src="../images/learnethhacking.jpg" alt="Ethical Hacking Certificate"></a></div>
+                    <div class="cert-item"><a href="https://www.udemy.com/certificate/UC-0f451d84-5ab3-4e8b-8210-4e3c24d4c14d/" target="_blank"><img src="../images/digitalforensics.jpg" alt="Digital Forensics Certificate"></a></div>
+                </div>
+                
+                <button class="carousel-prev" id="prevBtn">P</button>
+                <button class="carousel-next" id="nextBtn">N</button>
+            </div>
+        </section>
+
+        <hr class="divider-sub">
+
+        <section id="myawards" class="reveal">
+            <h2 class="sub-header">My Awards</h2>
+            <p class="bio"><p class = "bio">I was recognized and awarded for my contributions to the team at AT&T. 
+            </p>
+            
+            <div class="carousel-container-awards">
+                <div class="carousel-slide-awards">
+                    <div class="award-item"><img src="../images/att-connection-award.png" alt="att-connection-award"></div>
+                    <div class="award-item"><img src="../images/att-sprintathon-award.png" alt="att-sprintathon-award"></div>
+                    <div class="award-item"><img src="../images/att-contribution-award.png" alt="att-contribution-award"></div>
+                </div>
+                
+                <button class="carousel-award-prev" id="prevBtnAward">P</button>
+                <button class="carousel-award-next" id="nextBtnAward">N</button>
+            </div>
+            <div id="award-caption-text" class="carousel-caption">
+                AT&T Connection Award - Developing a mobile application from scratch that helped 5000+ employees
+            </div>
+        </section>
+
+        <hr class="divider-sub">
+
+        <section id="favoriteos" class="reveal">
+            <h2 class="sub-header">My Favorite Operating Systems</h2>
+            <p class="bio">
+                <span class="desktop">(Hover to flip)</span>
+                <span class="mobile">(Tap to flip)</span>
+            </p>
+            
+            <div class="os-coin-container">
+                <div class="os-coin">
+                    <div class="os-face os-front">
+                        <div class="os-circle">
+                            <img src="../images/windows.png" alt="Windows Logo">
+                        </div>
+                        <p class="os-label">Microsoft Windows</p>
+                    </div>
+                    
+                    <div class="os-face os-back">
+                        <div class="os-circle">
+                            <img src="../images/android.png" alt="Android Logo">
+                        </div>
+                        <p class="os-label">Android</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <button id="backToTop" title="Go to top">
+            <img src="../images/backtotop.png" alt="backtotop">
+        </button>
+
+        <button id="homeButton" title="home">
+            <img src="../images/home-technology.png" alt="home-button">
+        </button>
+
+    </div>
+    <script src="functionality-technology.js"></script>
+</body>
+</html>

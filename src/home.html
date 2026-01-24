@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anurag R Simha | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script>
+        if (localStorage.getItem('theme') === 'dark') {
+            document.documentElement.classList.add('dark-mode');
+        }
+    </script>
+</head>
+
+<body>
+
+    <button class="menu-toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </button>
+
+    <nav class="side-nav" id="side-nav">
+        <ul class="nav-links">
+            <li><a href="#aboutme">About Me</a></li>
+            <li><a href="#myprojects">My Projects</a></li>
+            <li><a href="#contactme">Contact Me</a></li>
+            <li><a href="#exploremyinterests">Explore My Interests</a></li>
+            <li><a href="#sendmeamessage">Send me a message</a></li>
+            <li><hr class="nav-divider"></li>
+            <li><button id="theme-toggle" class="nav-theme-btn">Switch to Dark</button></li>
+            <li><hr class="nav-divider"></li>
+        </ul>
+    </nav>
+
+    <div class="content-overlay">
+        <header>
+            <div class="profile-container">
+                <img src="../images/me_home.jpg" alt="Anurag R Simha" class="main-profile-pic">
+            </div>
+        </header>
+
+        <h1 class="name-font">Anurag R Simha</h1>
+        <hr class="divider">
+
+        <section id="aboutme" class="reveal">
+            <h2 class="sub-header">About Me</h2>
+            <p class="bio">I am a Software Engineer with over two years of industry experience from AT&T, 
+                specializing in cybersecurity and cross-platform mobile development. 
+                I focus on building secure Flutter applications and optimizing Azure cloud security to reduce vulnerabilities. 
+                Having built two mobile apps from scratch and received multiple awards for my contributions, 
+                I am driven by applying emerging technologies to real-world problems. Beyond technology, 
+                I am fascinated by history and linguistics, and I enjoy engaging myself with classical music, noir jazz, 
+                and old Hollywood classics.
+            </p>
+        </section>
+
+        <hr class="divider-sub">
+
+        <section id="myprojects" class="reveal">
+            <h2 class="sub-header">My projects</h2>
+            <div class="picture-grid">
+                <a href="https://gitlab.com/josephlucas/cs530-meal-project" target="_blank" class="elevate-item">
+                    <img src="../images/project1.png" alt="FlavorFire" class="img-project1">
+                </a>
+                <a href="https://github.com/AnuragRSimha/Redstone" target="_blank" class="elevate-item project2image">
+                    <img src="../images/project2.png" alt="RedStone" class="img-project2">
+                </a>
+                <a href="https://github.com/AnuragRSimha/Opulence" target="_blank" class="elevate-item">
+                    <img src="../images/project3.png" alt="Opulence" class="img-project3">
+                </a>
+            </div>
+        </section>
+
+        <hr class="divider-sub">
+
+        <section id="contactme" class="reveal">
+            <h2 class="sub-header">Contact Me</h2>
+            <div class="picture-grid contact-expint-images">
+                <a href="https://linkedin.com/in/anurag-r-simha" target="_blank" class="elevate-item">
+                    <img src="../images/linkedin.png" alt="LinkedIn">
+                    <span>LinkedIn</span>
+                </a>
+                <a href="mailto:anurag.rsimha@gmail.com" class="elevate-item">
+                    <img src="../images/gmail.png" alt="Gmail">
+                    <span>Gmail</span>
+                </a>
+                <a href="mailto:ars589@drexel.edu" class="elevate-item">
+                    <img src="../images/drexel-email.png" alt="Drexel Email">
+                    <span>Drexel Email</span>
+                </a>
+                <a href="tel:+12678541719" class="elevate-item">
+                    <img src="../images/call_message.webp" alt="Call/Message">
+                    <span>Call/Message</span>
+                </a>
+            </div>
+        </section>
+
+        <hr class="divider-sub">
+
+        <section id="exploremyinterests" class="reveal">
+            <h2 class="sub-header">Explore My Interests</h2>
+            <p class="bio">
+                <span class="desktop">(Click on each picture)</span>
+                <span class="mobile">(Tap on each picture)</span>
+            </p>
+            <div class="picture-grid contact-expint-images">
+                <a href="technology.html" class="elevate-item" title="Click to explore my technical background">
+                    <img src="../images/me_home.jpg" alt="technology">
+                    <span>Technology</span>
+                </a>
+                <a href="history.html" class="elevate-item" title="Click to explore my interests in history">
+                    <img src="../images/me_history.jpg" alt="history">
+                    <span>History</span>
+                </a>
+                <a href="litlinmusic.html" class="elevate-item">
+                    <img src="../images/me_lin_lit.png" alt="Literature, Linguistics, and Music" title="Click to explore my literary side and my interests in linguistics and music">
+                    <span>Literature, Linguistics, and Music</span>
+                </a>
+            </div>
+        </section>
+
+        <div>
+            <p></p>
+        </div>
+
+        <footer id="sendmeamessage" class="footer-form reveal">
+            <h2 class="form-header">SEND ME A MESSAGE</h2>
+            <form id="contactForm" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" class="text-box-font" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" class="text-box-font" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" class="text-box-font" required></textarea>
+                </div>
+                <div class="form-group">
+                    <span class="label-spacer"></span> 
+                    <div class="button-container">
+                        <button type="submit" class="nav-theme-btn submit-btn">Send</button>
+                    </div>
+                </div>
+            </form>
+        </footer>
+
+        <button id="backToTop" title="Go to top">
+            <img src="../images/backtotop.png" alt="backtotop">
+        </button>
+
+    </div>
+    <script src="functionality.js"></script>
+</body>
+</html>
