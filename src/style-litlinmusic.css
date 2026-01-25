@@ -1,4 +1,27 @@
 /* GLOBAL USAGE */
+@font-face {
+    font-family: 'LocalTrebuchet';
+    src: url('../fonts/trebuc.ttf') format('truetype'); 
+    /* Use format('woff2') if your files are .woff2 */
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LocalTrebuchet';
+    src: url('../fonts/Trebuchet-MS-Italic.ttf') format('truetype'); 
+    font-weight: normal;
+    font-style: italic; /* Matches the italic file to the italic style */
+}
+
+/* Import Times New Roman */
+@font-face {
+    font-family: 'LocalTimes';
+    src: url('../fonts/times.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 :root {
     --overlay-color: rgba(198, 171, 149, 0.848);
     --text-color: black;
@@ -25,7 +48,7 @@ body {
     overflow-x: hidden;
     background: var(--bg-image) no-repeat center center fixed;
     background-size: cover;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'LocalTrebuchet', sans-serif;
     transition: background-image 0.5s ease-in-out, background-color 0.5s ease-in-out, color 0.3s ease;
 }
 
@@ -262,14 +285,14 @@ section {
 }
 
 .name-font {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'LocalTimes', serif;
     font-size: 3rem;
     margin: 10px 0;
     color: var(--text-color);
 }
 
 .name-subtitle-font {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'LocalTimes', serif;
     font-size: 2rem;
     margin: 10px 0;
     color: var(--text-color);
