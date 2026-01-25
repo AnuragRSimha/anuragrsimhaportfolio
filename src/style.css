@@ -8,10 +8,17 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'LocalTrebuchet';
+    src: url('../fonts/Trebuchet-MS-Italic.ttf') format('truetype'); 
+    font-weight: normal;
+    font-style: italic; /* Matches the italic file to the italic style */
+}
+
 /* Import Times New Roman */
 @font-face {
     font-family: 'LocalTimes';
-    src: url('../fonts/times-new-roman.ttf') format('truetype');
+    src: url('../fonts/times.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -52,7 +59,7 @@ body {
     overflow-x: hidden;
     background: var(--bg-image) no-repeat center center fixed;
     background-size: cover;
-    font-family: 'LocalTrebuchet', 'Trebuchet MS', sans-serif;
+    font-family: 'LocalTrebuchet', sans-serif;
     transition: background-image 0.5s ease-in-out, background-color 0.5s ease-in-out, color 0.3s ease;
 }
 
@@ -254,7 +261,7 @@ section {
 }
 
 .name-font {
-    font-family: 'LocalTimes', 'Times New Roman', Times, serif;
+    font-family: 'LocalTimes', serif;
     font-size: 3rem;
     margin: 10px 0;
     color: var(--text-color);
