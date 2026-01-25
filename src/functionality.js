@@ -15,15 +15,41 @@ topBtn.onclick = function() {
 
 // Contact Form Validation
 document.getElementById("contactForm").addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent page reload
+    
     const email = document.getElementById("email").value;
     const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
 
+    // Your existing validation logic
     if (!email.match(emailPattern)) {
         alert("Please enter a valid email address.");
-        event.preventDefault();
-    } else {
-        alert("Form submitted successfully!");
+        return;
     }
+
+    const formData = new FormData(this);
+    const submitBtn = document.querySelector(".submit-btn");
+    submitBtn.textContent = "Sending...";
+
+    // Sending the data to the email service
+    fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData
+    })
+    .then(async (response) => {
+        if (response.status == 200) {
+            alert("Message sent successfully!"); // Your original alert
+            document.getElementById("contactForm").reset();
+        } else {
+            alert("Something went wrong. Please try again.");
+        }
+    })
+    .catch(error => {
+        console.log(error);
+        alert("Verification failed.");
+    })
+    .finally(() => {
+        submitBtn.textContent = "Send";
+    });
 });
 
 // Toggle Side Menu
