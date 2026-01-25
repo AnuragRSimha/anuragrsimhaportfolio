@@ -261,7 +261,7 @@ section {
 }
 
 .name-font {
-    font-family: 'LocalTimes', sans-serif;
+    font-family: 'LocalTimes', serif;
     font-size: 3rem;
     margin: 10px 0;
     color: var(--text-color);

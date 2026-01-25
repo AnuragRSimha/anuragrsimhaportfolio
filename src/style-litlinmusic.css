@@ -656,6 +656,14 @@ html.dark-mode .playbar-container {
     }
 }
 
+.mobile {
+    display: none;
+}
+
+.desktop {
+    display: inline;
+}
+
 /* FOR MOBILE */
 @media screen and (max-width: 768px) {
     
@@ -770,5 +778,13 @@ html.dark-mode .playbar-container {
     
     #playbar-label {
         font-size: 0.8rem; /* Slightly smaller font for mobile */
+    }
+
+    .desktop {
+        display: none; /* Hide 'Click' on mobile */
+    }
+
+    .mobile {
+        display: inline; /* Show 'Tap' on mobile */
     }
 }
