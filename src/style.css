@@ -2,7 +2,7 @@
 /* Import Trebuchet MS */
 @font-face {
     font-family: 'LocalTrebuchet';
-    src: url('fonts/trebuc.ttf') format('truetype'); 
+    src: url('../fonts/trebuc.ttf') format('truetype'); 
     /* Use format('woff2') if your files are .woff2 */
     font-weight: normal;
     font-style: normal;
@@ -11,7 +11,7 @@
 /* Import Times New Roman */
 @font-face {
     font-family: 'LocalTimes';
-    src: url('fonts/times-new-roman.ttf') format('truetype');
+    src: url('../fonts/times-new-roman.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
