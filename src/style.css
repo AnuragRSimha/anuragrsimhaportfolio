@@ -1,4 +1,21 @@
 /* GLOBAL USAGE */
+/* Import Trebuchet MS */
+@font-face {
+    font-family: 'LocalTrebuchet';
+    src: url('fonts/trebuc.ttf') format('truetype'); 
+    /* Use format('woff2') if your files are .woff2 */
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Import Times New Roman */
+@font-face {
+    font-family: 'LocalTimes';
+    src: url('fonts/times-new-roman.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 :root {
     --overlay-color: rgba(255, 255, 255, 0.85);
     --text-color: #000;
@@ -35,7 +52,7 @@ body {
     overflow-x: hidden;
     background: var(--bg-image) no-repeat center center fixed;
     background-size: cover;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'LocalTrebuchet', 'Trebuchet MS', sans-serif;
     transition: background-image 0.5s ease-in-out, background-color 0.5s ease-in-out, color 0.3s ease;
 }
 
@@ -237,7 +254,7 @@ section {
 }
 
 .name-font {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'LocalTimes', 'Times New Roman', Times, serif;
     font-size: 3rem;
     margin: 10px 0;
     color: var(--text-color);
@@ -411,7 +428,7 @@ section {
     cursor: pointer;
     transition: 0.3s;
     font-size: large;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'LocalTrebuchet', sans-serif;
 }
 
 .submit-btn:hover {
@@ -420,7 +437,7 @@ section {
 }
 
 .text-box-font{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'LocalTrebuchet', sans-serif;
     font-size: 1.1rem;
     line-height: 1.5;
 }
