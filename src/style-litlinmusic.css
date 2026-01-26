@@ -220,7 +220,7 @@ body {
     box-shadow: -2px 0 10px rgba(0,0,0,0.5);
     transition: right 0.3s ease;
     z-index: 1500;
-    padding-top: 80px;
+    padding-top: 40px;
 }
 
 .side-nav.active {
@@ -234,7 +234,7 @@ body {
 }
 
 .nav-links li {
-    padding: 10px 0;
+    padding: 15px 0;
 }
 
 .nav-links a {
@@ -750,7 +750,7 @@ html.dark-mode .playbar-container {
     }
 
     .nav-links li {
-        padding: 3px 0;
+        padding: 8px 0;
     }
 
     .playbar-container {
